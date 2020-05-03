@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Account" representedClassName="Account" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="rawTransactionsAccount" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Transaction" inverseName="account" inverseEntity="Transaction"/>
+    </entity>
+    <entity name="Category" representedClassName="Category" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <relationship name="rawTransactionsCategory" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Transaction" inverseName="category" inverseEntity="Transaction"/>
+    </entity>
+    <entity name="Transaction" representedClassName="Transaction" syncable="YES">
+        <attribute name="amount" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="rawDate" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <relationship name="account" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Account" inverseName="rawTransactionsAccount" inverseEntity="Account"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="rawTransactionsCategory" inverseEntity="Category"/>
+    </entity>
+    <elements>
+        <element name="Account" positionX="-605.15234375" positionY="-122.796875" width="128" height="88"/>
+        <element name="Category" positionX="19.39453125" positionY="-146.94921875" width="128" height="73"/>
+        <element name="Transaction" positionX="-312.0078125" positionY="-259.96484375" width="128" height="118"/>
+    </elements>
+</model>
