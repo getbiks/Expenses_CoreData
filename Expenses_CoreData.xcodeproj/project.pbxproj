@@ -27,7 +27,7 @@
 		5A1740D7245D8F780040340A /* CategoryList_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1740D6245D8F780040340A /* CategoryList_ViewController.swift */; };
 		5A1740D9245D90F50040340A /* CategoryTransactions_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A1740D8245D90F50040340A /* CategoryTransactions_ViewController.swift */; };
 		5A44A350245F2F17009E3B4A /* Transaction_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A44A34F245F2F17009E3B4A /* Transaction_TableViewCell.swift */; };
-		5A4B9AF6245F4B320040A34C /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B9AF5245F4B320040A34C /* Helper.swift */; };
+		5A4B9AF6245F4B320040A34C /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A4B9AF5245F4B320040A34C /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,7 +53,7 @@
 		5A1740D6245D8F780040340A /* CategoryList_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryList_ViewController.swift; sourceTree = "<group>"; };
 		5A1740D8245D90F50040340A /* CategoryTransactions_ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTransactions_ViewController.swift; sourceTree = "<group>"; };
 		5A44A34F245F2F17009E3B4A /* Transaction_TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction_TableViewCell.swift; sourceTree = "<group>"; };
-		5A4B9AF5245F4B320040A34C /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		5A4B9AF5245F4B320040A34C /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,24 +87,25 @@
 		58A73BA41FB55081001EF4DF /* Expenses_CoreData */ = {
 			isa = PBXGroup;
 			children = (
+				5AFDDAE7245F605B00CAE3E4 /* Helper */,
+				5AFDDAE6245F603200CAE3E4 /* Cells */,
 				5A1740D5245D74440040340A /* Storyboard */,
-				5A1740D4245D74330040340A /* Scenes */,
+				5A1740D4245D74330040340A /* ViewController */,
 				5A1740D3245D74260040340A /* CoreData */,
 				58A73BB41FB55081001EF4DF /* Info.plist */,
 				58A73BAC1FB55081001EF4DF /* Expenses_CoreData.xcdatamodeld */,
-				58A73BC21FB550AF001EF4DF /* Support Files */,
-				5A4B9AF5245F4B320040A34C /* Helper.swift */,
+				58A73BC21FB550AF001EF4DF /* Resources */,
 			);
 			path = Expenses_CoreData;
 			sourceTree = "<group>";
 		};
-		58A73BC21FB550AF001EF4DF /* Support Files */ = {
+		58A73BC21FB550AF001EF4DF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
 				58A73BAF1FB55081001EF4DF /* Assets.xcassets */,
 				58A73BA51FB55081001EF4DF /* AppDelegate.swift */,
 			);
-			name = "Support Files";
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		5A1740D3245D74260040340A /* CoreData */ = {
@@ -120,7 +121,7 @@
 			name = CoreData;
 			sourceTree = "<group>";
 		};
-		5A1740D4245D74330040340A /* Scenes */ = {
+		5A1740D4245D74330040340A /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
 				58A73BBC1FB550A2001EF4DF /* Accounts_ViewController.swift */,
@@ -131,9 +132,8 @@
 				58A73BBB1FB550A2001EF4DF /* NewTransaction_ViewController.swift */,
 				5A1740D6245D8F780040340A /* CategoryList_ViewController.swift */,
 				5A1740D8245D90F50040340A /* CategoryTransactions_ViewController.swift */,
-				5A44A34F245F2F17009E3B4A /* Transaction_TableViewCell.swift */,
 			);
-			name = Scenes;
+			name = ViewController;
 			sourceTree = "<group>";
 		};
 		5A1740D5245D74440040340A /* Storyboard */ = {
@@ -150,6 +150,22 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5AFDDAE6245F603200CAE3E4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5A44A34F245F2F17009E3B4A /* Transaction_TableViewCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		5AFDDAE7245F605B00CAE3E4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5A4B9AF5245F4B320040A34C /* UIViewController+Ext.swift */,
+			);
+			name = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -230,7 +246,7 @@
 				58A73BBE1FB550A2001EF4DF /* NewAccount_ViewController.swift in Sources */,
 				5A1740D0245D5B1B0040340A /* NewCategory_ViewController.swift in Sources */,
 				5A1740CD245D56F60040340A /* Transaction+CoreDataClass.swift in Sources */,
-				5A4B9AF6245F4B320040A34C /* Helper.swift in Sources */,
+				5A4B9AF6245F4B320040A34C /* UIViewController+Ext.swift in Sources */,
 				5A1740C9245D56F60040340A /* Account+CoreDataClass.swift in Sources */,
 				58A73BC01FB550A2001EF4DF /* Accounts_ViewController.swift in Sources */,
 				5A1740D2245D5B520040340A /* Categories_ViewController.swift in Sources */,
