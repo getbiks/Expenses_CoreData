@@ -20,7 +20,7 @@ This is a practise app to showcase Core Data functionality
 - iOS 10.0+
 - Xcode 11
 
-## Meta
+## Credit
 
 Bikash Agarwal – [@getbiks](https://twitter.com/dbader_org) – getbiks@gmail.com
 
