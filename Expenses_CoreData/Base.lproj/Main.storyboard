@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bbX-aj-h9R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="72e-xl-rwD">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
@@ -17,7 +17,7 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jiV-In-LEp">
                                 <rect key="frame" x="0.0" y="44" width="375" height="574"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="AccountCell" textLabel="l9B-I5-aLt" detailTextLabel="11e-ei-qnI" style="IBUITableViewCellStyleValue1" id="uzn-n1-ipg">
                                         <rect key="frame" x="0.0" y="28" width="375" height="43.5"/>
@@ -53,7 +53,7 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="jiV-In-LEp" firstAttribute="top" secondItem="SON-Xh-Shw" secondAttribute="top" id="6ku-xJ-rZy"/>
                             <constraint firstItem="SON-Xh-Shw" firstAttribute="bottom" secondItem="jiV-In-LEp" secondAttribute="bottom" id="V16-it-MmH"/>
@@ -76,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4v-2M-ywF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1760.8" y="-545.57721139430294"/>
+            <point key="canvasLocation" x="2700" y="-545.57721139430294"/>
         </scene>
         <!--Categories-->
         <scene sceneID="r4C-Yd-H20">
@@ -296,7 +296,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sK9-db-ExT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2636" y="-1260"/>
+            <point key="canvasLocation" x="3575" y="-1290"/>
         </scene>
         <!--Transactions-->
         <scene sceneID="JGK-eG-iyM">
@@ -417,7 +417,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1e-PX-DNa" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2636" y="-527.58620689655174"/>
+            <point key="canvasLocation" x="3575.1999999999998" y="-527.58620689655174"/>
         </scene>
         <!--New Transaction-->
         <scene sceneID="YBH-kY-cXb">
@@ -558,7 +558,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLJ-tV-kii" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3569" y="-528"/>
+            <point key="canvasLocation" x="4508" y="-528.48575712143929"/>
         </scene>
         <!--Categories-->
         <scene sceneID="Cfp-4d-jBZ">
@@ -609,14 +609,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ds6-jz-F0T" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4404" y="-528"/>
+            <point key="canvasLocation" x="5343.1999999999998" y="-528.48575712143929"/>
         </scene>
         <!--Accounts-->
         <scene sceneID="4tK-Xd-f2H">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="KDG-0t-b86" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Accounts" image="creditcard" catalog="system" id="QM2-yA-5nD">
-                        <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="badgeColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4aE-u8-ug6">
@@ -630,7 +630,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7k-tS-pwC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="870" y="-546"/>
+            <point key="canvasLocation" x="1808.8" y="-546.47676161919048"/>
         </scene>
         <!--Add New Category-->
         <scene sceneID="omz-uf-Fcs">
@@ -676,39 +676,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Km-Rn-wqG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5234" y="-528"/>
-        </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="aEy-9J-S5u">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bbX-aj-h9R" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UjG-TD-y6P">
-                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                            </userDefinedRuntimeAttribute>
-                        </userDefinedRuntimeAttributes>
-                    </tabBar>
-                    <connections>
-                        <segue destination="KDG-0t-b86" kind="relationship" relationship="viewControllers" id="h0n-3g-c2d"/>
-                        <segue destination="MBa-xn-zg5" kind="relationship" relationship="viewControllers" id="D9R-aC-u3H"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="oVE-xG-5Cw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="54" y="-546"/>
+            <point key="canvasLocation" x="6172" y="-528.48575712143929"/>
         </scene>
         <!--Category-->
         <scene sceneID="83w-dt-aOP">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="MBa-xn-zg5" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Category" image="folder" catalog="system" id="pFD-KI-lRh">
-                        <color key="badgeColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="badgeColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                     </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zj6-YO-9Kt">
@@ -723,6 +698,31 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4R-yZ-Gr5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="870" y="229"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="5Z9-mX-ZG1">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="72e-xl-rwD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1SC-68-WHU">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBar>
+                    <connections>
+                        <segue destination="KDG-0t-b86" kind="relationship" relationship="viewControllers" id="99C-jl-nRF"/>
+                        <segue destination="MBa-xn-zg5" kind="relationship" relationship="viewControllers" id="vKq-Pn-4Ol"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zAK-Tg-8dS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="869.60000000000002" y="-546.47676161919048"/>
         </scene>
     </scenes>
     <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
